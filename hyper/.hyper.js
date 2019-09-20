@@ -1,11 +1,10 @@
-// Future versions of Hyper may add additional config options,
+
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
 
 module.exports = {
   config: {
 
-	
     // hyper-pane
     paneNavigation: {
       hotkeys: {
@@ -17,16 +16,16 @@ module.exports = {
         }
       }
     },
-
+    
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
     updateChannel: 'stable',
 
     // default font size in pixels for all tabs
-    fontSize: 20,
+    fontSize: 16,
 
     // font family with optional fallbacks
-    fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: '"IBM Plex Mono Bold", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
@@ -145,22 +144,24 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyper-pane", "hyper-ayu-light"],
-  // themes:
-  // hyper-ayu-light
-  // hyper-ayu-dark
-  // hyper-ayu-mirage
-  // hyper-blood-moon
-  // hyper-papercolor
-  // hyperocean
-  // hyper-night-owl
-  // hyper-nyx
-  // hyper-electron-highlighter
-  // hyper-vintage
-  // hyperterm-retro
-  // hyper-oldschool
-  // hyper-retro
-  // hyper-nord
+  plugins: ["hyper-pane", 
+      // Themes
+  //            "hyper-ayu-light",
+  //            "hyper-ayu-dark",
+  //            "hyper-ayu-mirage",
+  //            "hyper-bloody",
+  //            "hyper-blood-moon",
+  //            "hyper-papercolor",
+  //            "hyperocean",
+  //            "hyper-night-owl",
+  //            "hyper-nyx",
+  //            "hyper-electron-highlighter",
+  //            "hyper-vintage",
+  //            "hyperterm-retro",
+  //            "hyper-oldschool",
+  //            "hyper-retro",
+              "hyper-nord"
+  ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
