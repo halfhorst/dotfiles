@@ -1,4 +1,7 @@
 
+# Custom path mods
+zsh/.path_mods.sh
+
 # Fonts
 plex/
 Hack/
