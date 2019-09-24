@@ -22,7 +22,7 @@ module.exports = {
     updateChannel: 'stable',
 
     // default font size in pixels for all tabs
-    fontSize: 16,
+    fontSize: 12,
 
     // font family with optional fallbacks
     fontFamily: '"IBM Plex Mono Bold", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
@@ -40,7 +40,7 @@ module.exports = {
     cursorAccentColor: '#000',
 
     // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
-    cursorShape: 'BLOCK',
+    cursorShape: 'UNDERLINE',
 
     // set to `true` (without backticks and without quotes) for blinking cursor
     cursorBlink: true,
@@ -148,7 +148,7 @@ module.exports = {
       // Themes
   //            "hyper-ayu-light",
   //            "hyper-ayu-dark",
-  //            "hyper-ayu-mirage",
+              "hyper-ayu-mirage",
   //            "hyper-bloody",
   //            "hyper-blood-moon",
   //            "hyper-papercolor",
@@ -160,7 +160,7 @@ module.exports = {
   //            "hyperterm-retro",
   //            "hyper-oldschool",
   //            "hyper-retro",
-              "hyper-nord"
+  //            "hyper-nord"
   ],
 
   // in development, you can create a directory under
