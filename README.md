@@ -2,7 +2,8 @@
 
 I work on serveral different computers and never quite got my Ubuntu setup the same
 between them. I got sick of the different configurations and built an idempotent
-shell script that will get me up-and-running with a basic setup. 
+shell script that will get me up-and-running with a basic setup. So far I only have
+a need for an Ubuntu setup, but I'll add some more branches when the time comes.
 
 What it does:
 -------------
