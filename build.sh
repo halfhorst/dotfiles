@@ -61,5 +61,4 @@ popd
 find fonts/ -name '*.ttf' -exec cp {} ~/.fonts  \;
 
 # Finally, change shell to zsh
-# chsh -s /bin/zsh
-
+chsh -s /bin/zsh
