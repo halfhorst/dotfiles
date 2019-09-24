@@ -6,7 +6,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/cody/.oh-my-zsh"
+export ZSH="${HOME}/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -111,4 +111,4 @@ source .path_mods.sh
 # alias vim="$(which nvim)"
 
 # Sugar
-cat ~/dotfiles/logos/sour_comp.txt
+cat ~/.logos/sour_comp.txt

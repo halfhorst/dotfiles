@@ -22,10 +22,14 @@ sudo apt install -y vim
 
 # Copy over the colorschemes I've collected
 [ -d ~/.vim/colors ] || mkdir ~/.vim/colors
-cp -r vim/colors/ ~/.vim/colors
+cp -r vim/colors/. ~/.vim/colors
 
 # Install other things I like
 sudo apt install -y screen tmux
+
+# Copy over terminal splash screens
+[ -d ~/.logos ] || mkdir ~/.logos
+cp -r logos/. ~/.logos
 
 # xsv is a command line tabular data tool
 if [ ! -d ~/xsv ] 
