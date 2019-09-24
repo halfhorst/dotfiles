@@ -109,3 +109,6 @@ source $ZSH/oh-my-zsh.sh
 source .path_mods.sh
 
 # alias vim="$(which nvim)"
+
+# Sugar
+cat ~/dotfiles/logos/sour_comp.txt
