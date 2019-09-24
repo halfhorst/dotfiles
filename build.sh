@@ -27,6 +27,21 @@ cp -r vim/colors/ ~/.vim/colors
 # Install other things I like
 sudo apt install -y screen tmux
 
+# xsv is a command line tabular data tool
+if [ ! -d ~/xsv ] 
+then
+    pushd ~
+    git clone git://github.com/BurntSushi/xsv
+    cd xsv
+    cargo build --release
+    popd
+fi
+
+# dive lets you explore docker images
+wget https://github.com/wagoodman/dive/releases/download/v0.8.1/dive_0.8.1_linux_amd64.deb
+sudo apt install ./dive_0.8.1_linux_amd64.deb
+rm dive_0.8.1_linux_amd64.deb
+
 # Stow my configurations. This generates symlinks.
 # hyper auto-generates configs quite quickly, so I'm
 # adopting the general pattern of mv + stow
