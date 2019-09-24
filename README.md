@@ -5,8 +5,11 @@ between them. I got sick of the different configurations and built an idempotent
 shell script that will get me up-and-running with a basic setup. So far I only have
 a need for an Ubuntu setup, but I'll add some more branches when the time comes.
 
-What it does:
--------------
+The non-sudoer (like the cluster at work) case is not yet handled gracefully. You're 
+better off running what you want manually out of the build script, for now. 
+
+General Activities
+------------------
 * gives me zsh and oh-my-zsh
 * symlinks config dotfiles
 * installs some command line applications that I like
@@ -17,7 +20,9 @@ What it does:
 ## TODO
 - [X]  Move path manipulations to separate, ignored file
 - [X]  Add source computer splash logo
+- [ ]  Add flags for things like ignoring fonts and sudo commands
+- [ ]  Rename path_mods script
 - [ ]  Add lazygit
 - [ ]  Add gotop
-- [ ]  Finish up vimrc
+- [ ]  Finish up vimrc (pull down the vim plugin managers, too)
 - [ ]  Swap neovim for vim
