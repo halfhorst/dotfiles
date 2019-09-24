@@ -25,7 +25,7 @@ sudo apt install -y vim
 cp -r vim/colors/ ~/.vim/colors
 
 # Install other things I like
-# TBD
+sudo apt install -y screen tmux
 
 # Stow my configurations. This generates symlinks.
 # hyper auto-generates configs quite quickly, so I'm
