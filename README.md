@@ -23,6 +23,7 @@ General Activities
 - [ ]  Add flags for things like ignoring fonts and sudo commands
 - [ ]  Rename path_mods script
 - [ ]  Add lazygit
+- [ ]  Have stow ignore vim/colors/
 - [ ]  Add gotop
 - [ ]  Finish up vimrc (pull down the vim plugin managers, too)
 - [ ]  Swap neovim for vim
