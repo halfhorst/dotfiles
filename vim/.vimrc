@@ -10,24 +10,24 @@ filetype plugin indent on
 setf python
 set tabstop=4 shiftwidth=4 expandtab
 
+" Pathogen pkg manager
 execute pathogen#infect()
 
+" Vim plug  pkg manager
 call plug#begin('~/.vim/plugged')
-
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
 Plug 'ayu-theme/ayu-vim'
 Plug 'wakatime/vim-wakatime'
-
+Plug 'vim-airline/vim-airline'
 call plug#end()
 
 " language client setup
 
 " Required for operations modifying multiple buffers like rename.
 set hidden
-
 let g:LanguageClient_serverCommands = {
     \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls']}
 "    \ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
