@@ -22,6 +22,7 @@ Plug 'autozimu/LanguageClient-neovim', {
 Plug 'ayu-theme/ayu-vim'
 Plug 'wakatime/vim-wakatime'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " language client setup
