@@ -41,5 +41,6 @@ nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
 set termguicolors " temp help
-let ayucolor="mirage"  " Can be light, dark or mirage
-colorscheme ayu
+let ayucolor="light"  " Can be light, dark or mirage
+colorscheme guru
+

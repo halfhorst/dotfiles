@@ -40,7 +40,7 @@ module.exports = {
     cursorAccentColor: '#000',
 
     // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
-    cursorShape: 'UNDERLINE',
+    cursorShape: 'BLOCK',
 
     // set to `true` (without backticks and without quotes) for blinking cursor
     cursorBlink: true,
@@ -148,7 +148,8 @@ module.exports = {
       // Themes
   //            "hyper-ayu-light",
   //            "hyper-ayu-dark",
-              "hyper-ayu-mirage",
+  //            "hyper-oceanic-next",
+  //            "hyper-ayu-mirage",
   //            "hyper-bloody",
   //            "hyper-blood-moon",
   //            "hyper-papercolor",
@@ -160,7 +161,7 @@ module.exports = {
   //            "hyperterm-retro",
   //            "hyper-oldschool",
   //            "hyper-retro",
-  //            "hyper-nord"
+              "hyper-nord"
   ],
 
   // in development, you can create a directory under
