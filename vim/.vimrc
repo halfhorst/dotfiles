@@ -1,5 +1,3 @@
-
-
 set history=50
 set ruler
 set nu
@@ -25,8 +23,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
-" language client setup
-
+" Language client setup
 " Required for operations modifying multiple buffers like rename.
 set hidden
 let g:LanguageClient_serverCommands = {
@@ -36,7 +33,6 @@ let g:LanguageClient_serverCommands = {
 "    \ 'python': ['/usr/local/bin/pyls'],
 
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
-" Or map each action separately
 nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
 nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
@@ -44,4 +40,8 @@ nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 set termguicolors " temp help
 let ayucolor="light"  " Can be light, dark or mirage
 colorscheme guru
+
+" Configure vim-airline
+let g:airline_powerline_fonts = 1
+let g:airline_theme='papercolor'
 
