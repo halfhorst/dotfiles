@@ -20,6 +20,7 @@ General Activities
 ## TODO
 - [X]  Move path manipulations to separate, ignored file
 - [X]  Add source computer splash logo
+- [ ]  Add inventory of plugins included
 - [ ]  Add flags for things like ignoring fonts and sudo commands
 - [ ]  Rename path_mods script
 - [ ]  Add lazygit
