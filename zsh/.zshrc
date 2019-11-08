@@ -110,10 +110,12 @@ source .path_mods.sh
 
 # alias vim="$(which nvim)"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+# Fix % sign bug due to hyper + zsh
+unsetopt PROMPT_SP
+
+# Set default user so user@host not shown normally
+DEFAULT_USER=`whoami`
 
 # Sugar
-# clear
-# cat ~/.logos/sour_comp.txt
-clear
+cat ~/.logos/sour_comp.txt
+
