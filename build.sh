@@ -56,6 +56,10 @@ mv ~/.vimrc ~/.cody-builder-bkp && stow vim
 mv ~/.hyper.js ~/.cody-builder-bkp && stow hyper
 
 # Download custom fonts
+
+# for the agnoster oh-my-zsh theme
+sudo apt install -y fonts-powerline
+
 [ -d fonts ] || mkdir fonts
 pushd fonts
 if [[ ! -d Hack ]]
