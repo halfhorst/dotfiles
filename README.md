@@ -23,6 +23,8 @@ General Activities
 - [ ]  Add inventory of plugins included
 - [ ]  Add flags for things like ignoring fonts and sudo commands
 - [ ]  Rename path_mods script
+- [ ]  saving old dotfiles needs to follow symlinks. ALso it silently
+       fails to stow
 - [ ]  Add lazygit
 - [ ]  Have stow ignore vim/colors/
 - [ ]  Add gotop
