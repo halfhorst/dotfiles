@@ -106,7 +106,10 @@ source $ZSH/oh-my-zsh.sh
 #### Cody's custom configuration ####
 #####################################
 
-source .path_mods.sh
+if [[ -f .path_mods.sh ]]
+then
+  source .path_mods.sh
+fi
 
 # alias vim="$(which nvim)"
 

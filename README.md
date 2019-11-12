@@ -23,6 +23,7 @@ Features
 - [ ]  Add flags to ignore fonts and sudo commands
 - [ ]  Rename path_mods script
 - [ ]  Add lazygit and gotop
+- [ ]  Bugfix: saving old dotfiles needs to follow symlinks. Also it silently fails to stow
 - [ ]  Have stow ignore vim/colors/
 - [ ]  Finish up vimrc (pull down the vim plugin managers, too)
 - [ ]  Swap neovim for vim
