@@ -1,30 +1,28 @@
 # dotfiles
 
-I work on serveral different computers and never quite got my Ubuntu setup the same
-between them. I got sick of the different configurations and built an idempotent
-shell script that will get me up-and-running with a basic setup. So far I only have
-a need for an Ubuntu setup, but I'll add some more branches when the time comes.
+I'm sick of setting up dotfiles over and over and trying to remember the things I
+like. Hopefully, this will get me up and running on a new computer easy. It's
+organized by platform on different branches. So far I only have a need for an Ubuntu
+setup, but I'll add some more branches when the time comes.
 
 The non-sudoer (like the cluster at work) case is not yet handled gracefully. You're 
 better off running what you want manually out of the build script, for now. 
 
-General Activities
-------------------
-* gives me zsh and oh-my-zsh
-* symlinks config dotfiles
-* installs some command line applications that I like
-* installs some system fonts that I like
-* configures my terminal emulator of choice, hyper
-* copies over my terminal splash pictures!
+Features
+--------
+* zsh and oh-my-zsh
+* Symlinks to config dotfiles
+* A few CLI tools, like dive and xsv
+* Some nice fonts, usually monospace ones
+* Hyper configuration (terminal emulator)
+* Vim configuration
+* Terminal splash images!
 
 ## TODO
-- [X]  Move path manipulations to separate, ignored file
-- [X]  Add source computer splash logo
 - [ ]  Add inventory of plugins included
-- [ ]  Add flags for things like ignoring fonts and sudo commands
+- [ ]  Add flags to ignore fonts and sudo commands
 - [ ]  Rename path_mods script
-- [ ]  Add lazygit
+- [ ]  Add lazygit and gotop
 - [ ]  Have stow ignore vim/colors/
-- [ ]  Add gotop
 - [ ]  Finish up vimrc (pull down the vim plugin managers, too)
 - [ ]  Swap neovim for vim

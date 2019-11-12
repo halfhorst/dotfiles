@@ -1,7 +1,6 @@
 #!/bin/bash
 
 ################################
-# Cody's Setup Builder.        #
 # This *should* be idempotent. #
 ################################
 
@@ -50,10 +49,10 @@ rm dive_0.8.1_linux_amd64.deb
 # hyper auto-generates configs quite quickly, so I'm
 # adopting the general pattern of mv + stow
 sudo apt install -y stow
-[ -d ~/.cody-builder-bkp ] || mkdir ~/.cody-builder-bkp
-mv ~/.zshrc ~/.cody-builder-bkp && stow zsh
-mv ~/.vimrc ~/.cody-builder-bkp && stow vim
-mv ~/.hyper.js ~/.cody-builder-bkp && stow hyper
+[ -d ~/.dotfile-builder-bkp ] || mkdir ~/.dotfile-builder-bkp
+mv ~/.zshrc ~/.dotfile-builder-bkp && stow zsh
+mv ~/.vimrc ~/.dotfile-builder-bkp && stow vim
+mv ~/.hyper.js ~/.dotfile-builder-bkp && stow hyper
 
 # Download custom fonts
 
