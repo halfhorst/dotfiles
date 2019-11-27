@@ -19,6 +19,7 @@ Features
 * Terminal splash images!
 
 ## TODO
+- [ ]  Install autokey automatically on linux systems and map capslock to ctrl
 - [ ]  Add inventory of plugins included
 - [ ]  Add flags to ignore fonts and sudo commands
 - [ ]  Rename path_mods script
