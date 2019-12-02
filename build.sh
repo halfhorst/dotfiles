@@ -4,9 +4,11 @@
 # This *should* be idempotent. #
 ################################
 
-# Install zsh
-sudo apt install -y zsh
+GREEN='\033[0;32m'
+NC='\033[0m'
 
+printf "\n${GREEN}Installing zsh and oh-my-zsh.${NC}\n"
+sudo apt install -y zsh
 # Grab oh-my-zsh and install
 # This will run the install script directly from stdin
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
@@ -15,21 +17,21 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 set ZSH_CUSTOM="~/.oh-my-zsh/custom"
 git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
 
-# Install neovim and alias it to vim EDIT: for now, just vim
+printf "\n${GREEN}Installing vim and copying over color schemes.${NC}\n"
 sudo apt install -y vim
-# sudo apt install -y neovim
-
+# sudo apt install -y neovim  # TODO: Alias install and alias nvim
 # Copy over the colorschemes I've collected
 [ -d ~/.vim/colors ] || mkdir ~/.vim/colors
 cp -r vim/colors/. ~/.vim/colors
 
 # Install other things I like
-sudo apt install -y screen tmux
+# sudo apt install -y screen tmux
 
-# Copy over terminal splash screens
+printf "\n${GREEN}Copying terminal splash logos.${NC}\n"
 [ -d ~/.logos ] || mkdir ~/.logos
 cp -r logos/. ~/.logos
 
+printf "\n${GREEN}Cloning and installing xsv.${NC}\n"
 # xsv is a command line tabular data tool
 if [ ! -d ~/xsv ] 
 then
@@ -40,14 +42,15 @@ then
     popd
 fi
 
+printf"\n${GREEN}Installing dive.${NC}\n"
 # dive lets you explore docker images
 wget https://github.com/wagoodman/dive/releases/download/v0.8.1/dive_0.8.1_linux_amd64.deb
 sudo apt install ./dive_0.8.1_linux_amd64.deb
 rm dive_0.8.1_linux_amd64.deb
 
-# Stow my configurations. This generates symlinks.
-# hyper auto-generates configs quite quickly, so I'm
-# adopting the general pattern of mv + stow
+printf "\n${GREEN}Stowing configurations for zsh, vim and hyper.${NC}\n"
+# Stow generates symlinks. hyper auto-generates configs quite quickly,
+# so I'm adopting the general pattern of mv + stow.
 sudo apt install -y stow
 [ -d ~/.dotfile-builder-bkp ] || mkdir ~/.dotfile-builder-bkp
 mv ~/.zshrc ~/.dotfile-builder-bkp && stow zsh
@@ -56,8 +59,8 @@ mv ~/.hyper.js ~/.dotfile-builder-bkp && stow hyper
 
 # Download custom fonts
 
-# for the agnoster oh-my-zsh theme
-sudo apt install -y fonts-powerline
+printf "\n${GREEN}Downloading and installing custom fonts.${NC}\n"
+sudo apt install -y fonts-powerline  # for agnoster oh-my-zsh theme
 
 [ -d fonts ] || mkdir fonts
 pushd fonts
@@ -77,10 +80,10 @@ then
 fi
 popd
 
-# Install the fonts. Find all truetype font files and
-# copy them over
+# Install by finding all truetype font files and copying them over
 [ -d ~/.fonts ] || mkdir ~/.fonts
 find fonts/ -name '*.ttf' -exec cp {} ~/.fonts  \;
 
-# Finally, change shell to zsh
-chsh -s /bin/zsh
+printf "\n${GREEN}Changing shell to zsh.${NC}\n"
+chsh -s /bin/zsh $USER
+
