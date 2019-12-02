@@ -17,7 +17,9 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
+Plug 'scrooloose/nerdtree'
 Plug 'ayu-theme/ayu-vim'
+Plug 'ajmwagar/vim-deus'
 Plug 'wakatime/vim-wakatime'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
