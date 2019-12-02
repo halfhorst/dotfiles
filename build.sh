@@ -59,12 +59,10 @@ printf "\n${GREEN}Stowing configurations for zsh, vim and hyper.${NC}\n"
 # Stow generates symlinks. hyper auto-generates configs quite quickly,
 # so I'm adopting the general pattern of mv + stow.
 sudo apt install -y stow
-[ -d ~/.dotfile-builder-bkp ] || mkdir ~/.dotfile-builder-bkp
-mv ~/.zshrc ~/.dotfile-builder-bkp && stow zsh
-mv ~/.vimrc ~/.dotfile-builder-bkp && stow vim
-mv ~/.hyper.js ~/.dotfile-builder-bkp && stow hyper
-
-# Download custom fonts
+[ -d ~/.bkp-dotfiles ] || mkdir ~/.bkp-dotfiles
+([ -f ~/.zshrc ] && mv ~/.zshrc ~/.bkp-dotfiles) || stow zsh
+([ -f ~/.vimrc ] && mv ~/.vimrc ~/.bkp-dotfiles) || stow --ignore=colors vim
+([ -f ~/.hyper.js ] && mv ~/.hyper.js ~/.bkp-dotfiles) && stow hyper
 
 printf "\n${GREEN}Downloading and installing custom fonts.${NC}\n"
 sudo apt install -y fonts-powerline  # for agnoster oh-my-zsh theme
