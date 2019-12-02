@@ -21,8 +21,15 @@ printf "\n${GREEN}Installing vim and copying over color schemes.${NC}\n"
 sudo apt install -y vim
 # sudo apt install -y neovim  # TODO: Alias install and alias nvim
 # Copy over the colorschemes I've collected
-[ -d ~/.vim/colors ] || mkdir ~/.vim/colors
-cp -r vim/colors/. ~/.vim/colors
+[ -d ~/.vim/colors ] || mkdir -p ~/.vim/colors
+cp -r vim/colors/ ~/.vim/colors
+
+printf "\n${GREEN}Getting the vim package plugin managers.${NC}\n"
+mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+curl -fLo ~/.vim/autoload/plug.vim https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+printf "\n${GREEN}Installing Pathogen-managed plugins.${NC}\n"
+git clone https://github.com/myusuf3/numbers.vim.git ~/.vim/bundle/numbers
 
 # Install other things I like
 # sudo apt install -y screen tmux
