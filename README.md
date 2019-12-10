@@ -26,3 +26,14 @@ Features
 - [ ]  Add lazygit and gotop
 - [ ]  Bugfix: saving old dotfiles needs to follow symlinks. Also it silently fails to stow
 - [ ]  Swap neovim for vim
+
+## Vim plugins to check out
+- [ ] vim-commentary
+- [ ] gruvbox
+- [ ] goyo.vim
+- [ ] limelight.vim
+- [ ] deoplete.vim
+- [ ] fzf.vim
+- [ ] surround.vim
+- [ ] vim-gitgutter
+- [ ] vim-fugitive
