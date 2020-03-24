@@ -46,8 +46,9 @@ fonts:
 	mkdir -p fonts ${HOME}/.fonts
 	chdir fonts \
 		&& git clone git@github.com:source-foundry/Hack.git \
-    	&& git clone git@github.com:adobe-fonts/source-code-pro.git \
-    	&& git clone git@github.com:IBM/plex.git
+		&& git clone git@github.com:adobe-fonts/source-code-pro.git \
+		&& git clone git@github.com:IBM/plex.git \
+		&& git clone https://github.com/mozilla/Fira
 	find fonts/ -name '*.ttf' -exec cp {} ~/.fonts  \;
 
 
