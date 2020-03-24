@@ -13,6 +13,8 @@ execute pathogen#infect()
 " Vim plug  pkg manager
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'ajmwagar/vim-deus'
 Plug 'wakatime/vim-wakatime'

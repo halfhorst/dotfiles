@@ -5,6 +5,7 @@ zsh/.path_mods.sh
 # installed vim plugins and history
 vim/.vim/bundle
 vim/.vim/autoload
+vim/.vim/plugged
 vim/.vim/.*hist
 
 # VCS font data

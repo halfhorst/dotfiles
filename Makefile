@@ -29,6 +29,9 @@ vim:
 
 	# install pathogen packages
 	git clone https://github.com/myusuf3/numbers.vim.git ~/.vim/bundle/numbers
+	git clone https://tpope.io/vim/commentary.git ~/.vim/bundle/commentary
+	git clone https://tpope.io/vim/surround.git ~/.vim/bundle/surround
+	git clone https://github.com/airblade/vim-gitgutter.git ~/.vim/bundle/gitgutter
 
 	stow --target=${HOME} vim
 
@@ -50,6 +53,9 @@ fonts:
 		&& git clone git@github.com:IBM/plex.git \
 		&& git clone https://github.com/mozilla/Fira
 	find fonts/ -name '*.ttf' -exec cp {} ~/.fonts  \;
+
+	# install powerline fonts
+	sudo apt install -y fonts-powerline
 
 
 # Once-in-a-while useful utilities
