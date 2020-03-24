@@ -146,7 +146,7 @@ module.exports = {
   //   `project#1.0.1`
   plugins: ["hyper-pane", 
       // Themes
-  //            "hyper-ayu-light",
+              "hyper-ayu-light",
   //            "hyper-ayu-dark",
   //            "hyper-oceanic-next",
   //            "hyper-ayu-mirage",
@@ -161,7 +161,7 @@ module.exports = {
   //            "hyperterm-retro",
   //            "hyper-oldschool",
   //            "hyper-retro",
-              "hyper-nord"
+  //            "hyper-nord"
   ],
 
   // in development, you can create a directory under

@@ -2,8 +2,10 @@
 # Custom path mods
 zsh/.path_mods.sh
 
-# Fonts
-plex/
-Hack/
-source-code-pro/
+# installed vim plugins and history
+vim/.vim/bundle
+vim/.vim/autoload
+vim/.vim/.*hist
 
+# VCS font data
+fonts/
