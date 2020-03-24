@@ -42,7 +42,7 @@ hyper:
 	stow --target=${HOME} hyper
 
 logos:
-	stow --target=${home} logos
+	stow --target=${HOME} logos
 
 fonts:
 	rm -rfd fonts
