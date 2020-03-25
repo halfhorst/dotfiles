@@ -51,7 +51,8 @@ fonts:
 		&& git clone git@github.com:source-foundry/Hack.git \
 		&& git clone git@github.com:adobe-fonts/source-code-pro.git \
 		&& git clone git@github.com:IBM/plex.git \
-		&& git clone https://github.com/mozilla/Fira
+		&& git clone git@github.com:mozilla/Fira.git \
+		&& git clone git@github.com:be5invis/Iosevka.git
 	find fonts/ -name '*.ttf' -exec cp {} ~/.fonts  \;
 
 	# install powerline fonts
