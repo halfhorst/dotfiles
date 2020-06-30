@@ -11,6 +11,7 @@ setup, but I'll add some more branches when the time comes.
 - [ ]  Add inventory of plugins included
 - [ ]  Add lazygit and gotop
 - [ ]  Swap neovim for vim
+- [ ]  Add neofetch https://github.com/dylanaraps/neofetch
 
 ## Vim plugins to check out
 - [ ] gruvbox
