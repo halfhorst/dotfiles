@@ -1,11 +1,7 @@
 # dotfiles
 
 All the things I like for a cozy terminal experience, managed with `make` and `stow`.
-
-I'm sick of setting up dotfiles over and over and trying to remember the things I
-like. Hopefully, this will get me up and running on a new computer easy. It's
-organized by platform on different branches. So far I only have a need for an Ubuntu
-setup, but I'll add some more branches when the time comes.
+It's organized by platform on branches. So far I only have a need for an Ubuntu setup.
 
 ## Tasks to Get Around To
 - [ ]  Install autokey automatically on linux systems and map capslock to ctrl
