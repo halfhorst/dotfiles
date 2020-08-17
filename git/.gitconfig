@@ -1,8 +1,0 @@
-
-[user]
-    name = halfhorst
-    email = "chorst22@gmail.com"
-
-[core]
-	autocrlf = input
-    editor = vim
