@@ -22,3 +22,4 @@ It's organized by platform on branches. So far I only have a need for an Ubuntu 
 - [ ] bad wolf
 - [ ] deoplete.vim
 - [ ] fzf.vim
+- [ ] https://github.com/neoclide/coc.nvim
